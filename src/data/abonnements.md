@@ -57,8 +57,8 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 ## C- Forfait "sans engagement 1 personne"
 - collection: Abonnement sans engagement
 - prix: 49,99€
-- image: abonnement_sans_engagement_02.png
-- cta: /inscription?token=azerty05
+- image: prohiit-1personne.png
+- cta: /inscription?token=bHpM3FqGA0djHOH5
 
 - 1 personne en illimité
 - Accès à toute la salle de sport
@@ -69,8 +69,8 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 ## C- Forfait "sans engagement Duo"
 - collection: Abonnement sans engagement
 - prix: 74,99€
-- image: abonnement_sans_engagement_03.png
-- cta: /inscription?token=azerty06
+- image: prohiit-duo.png
+- cta: /inscription?token=UzoLKUytOVnLIBNK
 
 - 2 personnes en illimité
 - Accès à toute la salle de sport
@@ -107,8 +107,8 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 ## E- Forfait "à la carte 1 Pass journalier"
 - collection: Forfait à la carte
 - prix: 15€
-- image: forfait_a_la_carte_01.png
-- cta: /inscription?token=azerty09
+- image: prohiit-carte-1.png
+- cta: /inscription?token=HbBUxD0I5VtiuEcZ
 
 - 1 entrée pour une journée
 - Accès à toute la salle de sport
@@ -120,8 +120,8 @@ QR code à accès unique généré suite à l'achat.
 ## E- Forfait "à la carte 1 Pass une semaine"
 - collection: Forfait à la carte
 - prix: 25€
-- image: forfait_a_la_carte_02.png
-- cta: /inscription?token=azerty10
+- image: prohiit-carte-semaine.png
+- cta: /inscription?token=xTRUNSQA1cEMKCQ8
 
 - Forfait illimité – 1 personne – 1 semaine
 - Accès à toute la salle de sport
@@ -133,8 +133,8 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 ## E- Forfait "à la carte 1 mois"
 - collection: Forfait à la carte
 - prix: 75€
-- image: forfait_a_la_carte_03.png
-- cta: /inscription?token=azerty11
+- image: prohiit-carte-1m.png
+- cta: /inscription?token=mrKbJLGMfTvNkHHs
 
 - Forfait illimité – 1 personne – 1 mois
 - Accès à toute la salle de sport
@@ -145,8 +145,8 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 ## E- Forfait "à la carte 2 mois"
 - collection: Forfait à la carte
 - prix: 125€
-- image: forfait_a_la_carte_04.png
-- cta: /inscription?token=azerty12
+- image: prohiit-carte-2m.png
+- cta: /inscription?token=TSowkLmKnDDgYxPu
 
 - Forfait illimité – 1 personne – 2 mois
 - Accès à toute la salle de sport
@@ -157,7 +157,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 ## F- Offre parrainage
 - collection: Offres spéciales
 - prix: 0€
-- image: offres_speciales_01.png
+- image: prohiit-offre-parrainage.png
 - cta: /inscription?token=azerty13
 
 - **1 mois offert** pour le parrain et le filleul
@@ -168,7 +168,7 @@ Faire la demande par mail sur l'onglet Contact.
 ## F- Offre coaching musculation séance d'essai
 - collection: Offres spéciales
 - prix: 30€
-- image: offres_speciales_02.png
+- image: prohiit-offre-essai-coaching.png
 - cta: /inscription?token=azerty14
 
 30€ / 1h (valable 1 seule fois)
@@ -178,7 +178,7 @@ Faire la demande par mail sur l'onglet Contact.
 ## F- Offre spéciale Force de l'ordre, pompiers
 - collection: Offres spéciales
 - prix: 0€
-- image: offres_speciales_03.png
+- image: prohiit-offre-speciale-5E.png
 - cta: /inscription?token=azerty15
 
 - Pompiers

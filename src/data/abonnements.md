@@ -3,7 +3,7 @@
 ## A - Séance d'essai gratuite
 - collection: Abonnement sans engagement
 - prix: 0€
-- image: abonnement_sans_engagement_01.png
+- image: prohiit-essai.png
 - cta: /inscription?token=azerty01
 
 Séance d'essai du club gratuite (pas de réservation requise)
@@ -16,8 +16,8 @@ Accès immédiat possible après obtention de sa séance d'essai.
 ## A- Forfait étudiants - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 29,99€
-- image: abonnement_avec_engagement_12_mois_01.png
-- cta: /inscription?token=azerty02
+- image: prohiit-12m-etudiant.png
+- cta: /inscription?token=bvXABy0sfUZ1x88k
 
 - Forfait 1 personne étudiante sous présentation d'un justificatif
 - Accès à toute la salle de sport illimité
@@ -29,8 +29,8 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 ## B1- Forfait "illimité solo" - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 39,99€
-- image: abonnement_avec_engagement_12_mois_02.png
-- cta: /inscription?token=azerty03
+- image: prohiit-12m-solo.png
+- cta: /inscription?token=UZB6OD2ttA1NbYzo
 
 - Forfait 1 personne
 - Accès à toute la salle de sport en illimité
@@ -43,8 +43,8 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 ## B2- Forfait "illimité duo" - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 64,99€
-- image: abonnement_avec_engagement_12_mois_03.png
-- cta: /inscription?token=azerty04
+- image: prohiit-12m-duo.png
+- cta: /inscription?token=8lIv41afaYEcO0vA
 
 - Forfait 2 personnes
 - Accès illimité à toute la salle de sport

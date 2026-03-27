@@ -1,18 +1,5 @@
 # Abonnements PROHIIT
 
-## A - Séance d'essai gratuite
-- collection: Abonnement sans engagement
-- prix: 0€
-- image: prohiit-essai.png
-- cta: /inscription?token=azerty01
-
-Séance d'essai du club gratuite (pas de réservation requise)
-
-- Inscrivez-vous et bénéficiez de votre séance d'essai gratuite
-- À l'issue de votre inscription vous recevrez un QR code d'accès à usage unique pour vous permettre d'entrer dans le club (valable 24h)
-
-Accès immédiat possible après obtention de sa séance d'essai.
-
 ## A- Forfait étudiants - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 29,99€
@@ -54,6 +41,19 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
+## A - Séance d'essai gratuite
+- collection: Abonnement sans engagement
+- prix: 0€
+- image: prohiit-essai.png
+- cta: https://www.prohiit.fr/contact.html
+
+Séance d'essai du club gratuite (pas de réservation requise)
+
+- Inscrivez-vous et bénéficiez de votre séance d'essai gratuite
+- À l'issue de votre inscription vous recevrez un QR code d'accès à usage unique pour vous permettre d'entrer dans le club (valable 24h)
+
+Accès immédiat possible après obtention de sa séance d'essai.
+
 ## C- Forfait "sans engagement 1 personne"
 - collection: Abonnement sans engagement
 - prix: 49,99€
@@ -75,32 +75,6 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 - 2 personnes en illimité
 - Accès à toute la salle de sport
 - 74,99€/mois - sans engagement (4 mois minimum)
-
-Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
-
-## D- Forfait coaching duo
-- collection: Abonnement sans engagement
-- prix: 151€
-- image: abonnement_sans_engagement_04.png
-- cta: /inscription?token=azerty07
-
-- Forfait 2 personnes
-- Accès à toute la salle de sport
-- 2 séances de coaching individuelles par mois **sur le thème de votre choix** (1h par séance)
-- 149€/mois
-
-Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
-
-## D- Forfait coaching solo
-- collection: Abonnement sans engagement
-- prix: 79€
-- image: abonnement_sans_engagement_05.png
-- cta: /inscription?token=azerty08
-
-- Forfait 1 personne
-- Accès à toute la salle de sport
-- 1 séance de coaching individuelle par mois **sur le thème de votre choix** (1h par séance)
-- 79€/mois
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
@@ -158,7 +132,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 - collection: Offres spéciales
 - prix: 0€
 - image: prohiit-offre-parrainage.png
-- cta: /inscription?token=azerty13
+- cta: https://www.prohiit.fr/contact.html
 
 - **1 mois offert** pour le parrain et le filleul
 - Accès à toute la salle de sport
@@ -169,7 +143,7 @@ Faire la demande par mail sur l'onglet Contact.
 - collection: Offres spéciales
 - prix: 30€
 - image: prohiit-offre-essai-coaching.png
-- cta: /inscription?token=azerty14
+- cta: https://www.prohiit.fr/contact.html
 
 30€ / 1h (valable 1 seule fois)
 
@@ -179,7 +153,7 @@ Faire la demande par mail sur l'onglet Contact.
 - collection: Offres spéciales
 - prix: 0€
 - image: prohiit-offre-speciale-5E.png
-- cta: /inscription?token=azerty15
+- cta: https://www.prohiit.fr/contact.html
 
 - Pompiers
 - Gendarmes

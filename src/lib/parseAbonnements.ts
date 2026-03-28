@@ -4,6 +4,7 @@ export interface Abonnement {
   prix: string;
   image: string;
   cta: string;
+  ctaLabel: string;
   description: string;
 }
 
@@ -19,7 +20,7 @@ export function parseAbonnements(markdown: string): Abonnement[] {
       return line ? line.replace(`- ${key}:`, "").trim() : "";
     };
 
-    const metaKeys = ["collection", "prix", "image", "cta"];
+    const metaKeys = ["collection", "prix", "image", "cta", "ctaLabel"];
     const firstNonMetaIndex = lines.findIndex(
       (l, i) => i > 0 && l.trim() !== "" && !metaKeys.some((k) => l.startsWith(`- ${k}:`))
     );
@@ -33,6 +34,7 @@ export function parseAbonnements(markdown: string): Abonnement[] {
       prix: getMeta("prix"),
       image: getMeta("image"),
       cta: getMeta("cta"),
+      ctaLabel: getMeta("ctaLabel") || "Commander",
       description,
     };
   });

@@ -13,7 +13,7 @@ import NotFound from "./pages/NotFound.tsx";
 const Router = typeof window !== 'undefined' ? BrowserRouter : StaticRouter;
 const queryClient = new QueryClient();
 
-const App = ({ url }) => (
+const App = ({ url }: { url?: string }) => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />

@@ -11,7 +11,7 @@ const AbonnementListItem = ({ abonnement }: Props) => {
     : undefined;
 
   return (
-    <div className="flex items-center gap-4 rounded-lg border bg-card p-3 hover:shadow-md transition-shadow">
+    <div className="flex items-start gap-4 rounded-lg border bg-card p-3 hover:shadow-md transition-shadow">
       <div className="w-20 h-20 flex-shrink-0 rounded-md bg-muted overflow-hidden flex items-center justify-center">
         {imageSrc ? (
           <img
@@ -28,11 +28,11 @@ const AbonnementListItem = ({ abonnement }: Props) => {
         <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           {abonnement.collection}
         </span>
-        <h3 className="font-bold text-sm leading-tight text-card-foreground truncate">
+        <h3 className="font-bold text-sm leading-tight text-card-foreground">
           {abonnement.nom}
         </h3>
-        <p className="text-xs text-muted-foreground line-clamp-2 mt-0.5">
-          {abonnement.description.replace(/[*#\[\]()]/g, "").slice(0, 120)}
+        <p className="text-xs text-muted-foreground mt-1 whitespace-pre-line">
+          {abonnement.description}
         </p>
       </div>
       <div className="flex flex-col items-end gap-2 flex-shrink-0">
@@ -40,7 +40,7 @@ const AbonnementListItem = ({ abonnement }: Props) => {
           {abonnement.prix}
         </span>
         <Button asChild size="sm">
-          <a href={abonnement.cta}>Commander</a>
+          <a href={abonnement.cta}>{abonnement.ctaLabel}</a>
         </Button>
       </div>
     </div>

@@ -63,13 +63,13 @@ const AbonnementCard = ({ abonnement }: Props) => {
       </Card>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
-          <div className="flex flex-col sm:flex-row gap-4">
+        <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4">
             {imageSrc && (
               <img
                 src={imageSrc}
                 alt={abonnement.nom}
-                className="w-full sm:w-48 sm:min-w-[12rem] rounded-md object-contain"
+                className="w-full sm:w-48 sm:min-w-[12rem] rounded-lg object-contain"
               />
             )}
             <div className="flex flex-col gap-2 flex-1">

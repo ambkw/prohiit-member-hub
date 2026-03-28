@@ -64,19 +64,19 @@ const AbonnementCard = ({ abonnement }: Props) => {
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
+          {imageSrc && (
+            <img
+              src={imageSrc}
+              alt={abonnement.nom}
+              className="w-full rounded-md object-cover"
+            />
+          )}
           <DialogHeader>
             <DialogTitle className="text-lg font-bold">{abonnement.nom}</DialogTitle>
             <DialogDescription className="text-xs uppercase tracking-wide">
               {abonnement.collection}
             </DialogDescription>
           </DialogHeader>
-          {imageSrc && (
-            <img
-              src={imageSrc}
-              alt={abonnement.nom}
-              className="w-full rounded-md object-cover max-h-60"
-            />
-          )}
           <div className="text-sm text-foreground whitespace-pre-line leading-relaxed">
             {abonnement.description}
           </div>

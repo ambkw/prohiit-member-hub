@@ -46,6 +46,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 - prix: 0€
 - image: prohiit-essai.png
 - cta: https://www.prohiit.fr/contact.html
+- ctaLabel: S'inscrire
 
 Séance d'essai du club gratuite (pas de réservation requise)
 
@@ -133,6 +134,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 - prix: 0€
 - image: prohiit-offre-parrainage.png
 - cta: https://www.prohiit.fr/contact.html
+- ctaLabel: Nous contacter
 
 - **1 mois offert** pour le parrain et le filleul
 - Accès à toute la salle de sport
@@ -144,6 +146,7 @@ Faire la demande par mail sur l'onglet Contact.
 - prix: 30€
 - image: prohiit-offre-essai-coaching.png
 - cta: https://www.prohiit.fr/contact.html
+- ctaLabel: Nous contacter
 
 30€ / 1h (valable 1 seule fois)
 
@@ -154,6 +157,7 @@ Faire la demande par mail sur l'onglet Contact.
 - prix: 0€
 - image: prohiit-offre-speciale-5E.png
 - cta: https://www.prohiit.fr/contact.html
+- ctaLabel: Nous contacter
 
 - Pompiers
 - Gendarmes

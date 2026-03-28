@@ -63,30 +63,34 @@ const AbonnementCard = ({ abonnement }: Props) => {
       </Card>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-lg max-h-[85vh] overflow-y-auto">
-          {imageSrc && (
-            <img
-              src={imageSrc}
-              alt={abonnement.nom}
-              className="w-full rounded-md object-cover"
-            />
-          )}
-          <DialogHeader>
-            <DialogTitle className="text-lg font-bold">{abonnement.nom}</DialogTitle>
-            <DialogDescription className="text-xs uppercase tracking-wide">
-              {abonnement.collection}
-            </DialogDescription>
-          </DialogHeader>
-          <div className="text-sm text-foreground whitespace-pre-line leading-relaxed">
-            {abonnement.description}
-          </div>
-          <div className="flex items-center justify-between pt-4 border-t">
-            <span className="text-xl font-extrabold text-primary">
-              {abonnement.prix}
-            </span>
-            <Button asChild>
-              <a href={abonnement.cta}>{abonnement.ctaLabel}</a>
-            </Button>
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+          <div className="flex flex-col sm:flex-row gap-4">
+            {imageSrc && (
+              <img
+                src={imageSrc}
+                alt={abonnement.nom}
+                className="w-full sm:w-48 sm:min-w-[12rem] rounded-md object-cover"
+              />
+            )}
+            <div className="flex flex-col gap-2 flex-1">
+              <DialogHeader>
+                <DialogTitle className="text-lg font-bold">{abonnement.nom}</DialogTitle>
+                <DialogDescription className="text-xs uppercase tracking-wide">
+                  {abonnement.collection}
+                </DialogDescription>
+              </DialogHeader>
+              <div className="text-sm text-foreground whitespace-pre-line leading-relaxed">
+                {abonnement.description}
+              </div>
+              <div className="flex items-center justify-between pt-4 border-t mt-auto">
+                <span className="text-xl font-extrabold text-primary">
+                  {abonnement.prix}
+                </span>
+                <Button asChild>
+                  <a href={abonnement.cta}>{abonnement.ctaLabel}</a>
+                </Button>
+              </div>
+            </div>
           </div>
         </DialogContent>
       </Dialog>

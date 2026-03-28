@@ -50,14 +50,14 @@ const Index = () => {
             </p>
           ) : viewMode === "grid" ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((a) => (
-                <AbonnementCard key={a.cta} abonnement={a} />
+              {filtered.map((a, index) => (
+                <AbonnementCard key={index} abonnement={a} />
               ))}
             </div>
           ) : (
             <div className="flex flex-col gap-3">
-              {filtered.map((a) => (
-                <AbonnementListItem key={a.cta} abonnement={a} />
+              {filtered.map((a, index) => (
+                <AbonnementListItem key={index} abonnement={a} />
               ))}
             </div>
           )}

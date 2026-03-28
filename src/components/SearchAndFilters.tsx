@@ -40,9 +40,9 @@ const SearchAndFilters = ({
         />
       </div>
       <div className="flex flex-wrap items-center gap-2">
-        {COLLECTIONS.map((col) => (
+        {COLLECTIONS.map((col, index) => (
           <button
-            key={col}
+            key={index}
             onClick={() => onFilterChange(col)}
             className={cn(
               "px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wide border transition-colors",

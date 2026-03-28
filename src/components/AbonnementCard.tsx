@@ -42,12 +42,12 @@ const AbonnementCard = ({ abonnement }: Props) => {
           <h3 className="font-bold text-base leading-tight text-card-foreground">
             {abonnement.nom}
           </h3>
-          <p className="text-sm text-muted-foreground line-clamp-3 flex-1 whitespace-pre-line">
+          <p className="text-sm text-muted-foreground sm:line-clamp-3 flex-1 whitespace-pre-line">
             {abonnement.description}
           </p>
           <button
             onClick={() => setOpen(true)}
-            className="text-xs text-primary font-semibold hover:underline self-start"
+            className="hidden sm:inline text-xs text-primary font-semibold hover:underline self-start"
           >
             Voir le détail
           </button>
@@ -69,7 +69,7 @@ const AbonnementCard = ({ abonnement }: Props) => {
               <img
                 src={imageSrc}
                 alt={abonnement.nom}
-                className="w-full sm:w-48 sm:min-w-[12rem] rounded-md object-cover"
+                className="w-full sm:w-48 sm:min-w-[12rem] rounded-md object-contain"
               />
             )}
             <div className="flex flex-col gap-2 flex-1">

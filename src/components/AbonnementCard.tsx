@@ -36,9 +36,9 @@ const AbonnementCard = ({ abonnement }: Props) => {
           )}
         </div>
         <CardContent className="p-4 flex flex-col flex-1 gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             {abonnement.collection}
-          </span>
+          </h2>
           <h3 className="font-bold text-base leading-tight text-card-foreground">
             {abonnement.nom}
           </h3>

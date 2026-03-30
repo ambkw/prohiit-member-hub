@@ -43,9 +43,9 @@ const AbonnementListItem = ({ abonnement }: Props) => {
 
         {/* Text content */}
         <div className="flex-1 min-w-0">
-          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+          <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
             {abonnement.collection}
-          </span>
+          </h2>
           <h3 className="font-bold text-sm leading-tight text-card-foreground">
             {abonnement.nom}
           </h3>

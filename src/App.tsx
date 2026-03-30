@@ -20,7 +20,7 @@ const App = ({ url }: { url?: string }) => (
       <Sonner />
       <Router location={url}>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<Inscription />} />
           <Route path="/inscription" element={<Inscription />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

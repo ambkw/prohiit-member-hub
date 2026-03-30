@@ -12,13 +12,12 @@ const Header = () => {
           />
         </a>
         <nav className="flex items-center gap-1">
-          <NavLink
-            to="/"
+          <a
+            href="https://www.prohiit.fr/tarifs.html"
             className="px-4 py-2 text-sm font-semibold uppercase tracking-wide rounded-md transition-colors hover:bg-sidebar-accent"
-            activeClassName="bg-primary text-primary-foreground"
           >
             Abonnements
-          </NavLink>
+          </a>
           <NavLink
             to="/inscription"
             className="px-4 py-2 text-sm font-semibold uppercase tracking-wide rounded-md transition-colors hover:bg-sidebar-accent"

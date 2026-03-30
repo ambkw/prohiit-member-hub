@@ -42,7 +42,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
 ## A - Séance d'essai gratuite
-- collection: Abonnement sans engagement
+- collection: Forfait à la carte
 - prix: 0€
 - image: prohiit-essai.png
 - cta: https://www.prohiit.fr/contact.html

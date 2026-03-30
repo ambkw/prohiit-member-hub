@@ -13,7 +13,7 @@ const AbonnementListItem = ({ abonnement }: Props) => {
     : undefined;
 
   return (
-    <div className="rounded-lg border bg-card p-3 hover:shadow-md transition-shadow">
+    <div className="rounded-lg border bg-card p-3 hover:shadow-md transition-shadow" itemProp="item" itemScope itemType="https://schema.org/Product">
       {/* Mobile: stacked — Desktop: side by side */}
       <div className="flex flex-col sm:flex-row sm:items-start gap-4">
         {/* Image + prix/bouton row on mobile */}
@@ -25,18 +25,22 @@ const AbonnementListItem = ({ abonnement }: Props) => {
                 alt={abonnement.nom}
                 className="w-full h-full object-cover"
                 loading="lazy"
+                itemProp="image"
               />
             ) : (
               <span className="text-xs text-muted-foreground">—</span>
             )}
           </div>
           {/* On mobile: prix + bouton next to image */}
-          <div className="flex sm:hidden flex-col items-end gap-2 ml-auto">
+          <div className="flex sm:hidden flex-col items-end gap-2 ml-auto" itemProp="offers" itemScope itemType="https://schema.org/Offer">
+            <meta itemProp="priceCurrency" content="EUR" />
+            <meta itemProp="price" content={abonnement.prix.replace(/[^0-9.,]/g, "").replace(",", ".")} />
+            <meta itemProp="availability" content="https://schema.org/InStock" />
             <span className="text-base font-extrabold text-primary whitespace-nowrap">
               {abonnement.prix}
             </span>
             <Button asChild size="sm">
-              <a href={abonnement.cta}>{abonnement.ctaLabel}</a>
+              <a href={abonnement.cta} itemProp="url">{abonnement.ctaLabel}</a>
             </Button>
           </div>
         </div>
@@ -44,15 +48,16 @@ const AbonnementListItem = ({ abonnement }: Props) => {
         {/* Text content */}
         <div className="flex-1 min-w-0">
           <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-            {abonnement.collection}
+            <span itemProp="category">{abonnement.collection}</span>
           </h2>
-          <h3 className="font-bold text-sm leading-tight text-card-foreground">
+          <h3 className="font-bold text-sm leading-tight text-card-foreground" itemProp="name">
             {abonnement.nom}
           </h3>
           <p
             className={`text-xs text-muted-foreground mt-1 whitespace-pre-line ${
               !expanded ? "line-clamp-2 sm:line-clamp-none" : ""
             }`}
+            itemProp="description"
           >
             {abonnement.description}
           </p>

@@ -43,7 +43,7 @@ const Index = () => {
           viewMode={viewMode}
           onViewModeChange={setViewMode}
         />
-        <div className="mt-6">
+        <div className="mt-6" itemScope itemType="https://schema.org/ItemList">
           {filtered.length === 0 ? (
             <p className="text-center text-muted-foreground py-12">
               Aucun abonnement trouvé.
@@ -51,13 +51,19 @@ const Index = () => {
           ) : viewMode === "grid" ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filtered.map((a, index) => (
-                <AbonnementCard key={index} abonnement={a} />
+                <div key={index} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                  <meta itemProp="position" content={String(index + 1)} />
+                  <AbonnementCard abonnement={a} />
+                </div>
               ))}
             </div>
           ) : (
             <div className="flex flex-col gap-3">
               {filtered.map((a, index) => (
-                <AbonnementListItem key={index} abonnement={a} />
+                <div key={index} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                  <meta itemProp="position" content={String(index + 1)} />
+                  <AbonnementListItem abonnement={a} />
+                </div>
               ))}
             </div>
           )}

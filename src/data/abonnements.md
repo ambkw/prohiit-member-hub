@@ -1,6 +1,6 @@
 # Abonnements PROHIIT
 
-## A- Forfait étudiants - abonnement annuel
+## Forfait étudiants - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 29,99€
 - image: prohiit-12m-etudiant.png
@@ -13,7 +13,7 @@
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
-## B1- Forfait "illimité solo" - abonnement annuel
+## Forfait "illimité solo" - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 39,99€
 - image: prohiit-12m-solo.png
@@ -27,7 +27,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
-## B2- Forfait "illimité duo" - abonnement annuel
+## Forfait "illimité duo" - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 64,99€
 - image: prohiit-12m-duo.png
@@ -41,7 +41,31 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
-## A - Séance d'essai gratuite
+## Forfait "sans engagement 1 personne"
+- collection: Abonnement sans engagement
+- prix: 49,99€
+- image: prohiit-1personne.png
+- cta: /inscription?token=bHpM3FqGA0djHOH5
+
+- 1 personne en illimité
+- Accès à toute la salle de sport
+- 49,99€/mois - sans engagement (4 mois minimum)
+
+Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
+
+## Forfait "sans engagement Duo"
+- collection: Abonnement sans engagement
+- prix: 74,99€
+- image: prohiit-duo.png
+- cta: /inscription?token=UzoLKUytOVnLIBNK
+
+- 2 personnes en illimité
+- Accès à toute la salle de sport
+- 74,99€/mois - sans engagement (4 mois minimum)
+
+Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
+
+## Séance d'essai gratuite
 - collection: Forfait à la carte
 - prix: 0€
 - image: prohiit-essai.png
@@ -55,31 +79,7 @@ Séance d'essai du club gratuite (pas de réservation requise)
 
 Accès immédiat possible après obtention de sa séance d'essai.
 
-## C- Forfait "sans engagement 1 personne"
-- collection: Abonnement sans engagement
-- prix: 49,99€
-- image: prohiit-1personne.png
-- cta: /inscription?token=bHpM3FqGA0djHOH5
-
-- 1 personne en illimité
-- Accès à toute la salle de sport
-- 49,99€/mois - sans engagement (4 mois minimum)
-
-Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
-
-## C- Forfait "sans engagement Duo"
-- collection: Abonnement sans engagement
-- prix: 74,99€
-- image: prohiit-duo.png
-- cta: /inscription?token=UzoLKUytOVnLIBNK
-
-- 2 personnes en illimité
-- Accès à toute la salle de sport
-- 74,99€/mois - sans engagement (4 mois minimum)
-
-Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
-
-## E- Forfait "à la carte 1 Pass journalier"
+## Forfait "à la carte 1 Pass journalier"
 - collection: Forfait à la carte
 - prix: 15€
 - image: prohiit-carte-1.png
@@ -92,7 +92,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 QR code à accès unique généré suite à l'achat.
 
-## E- Forfait "à la carte 1 Pass une semaine"
+## Forfait "à la carte 1 Pass une semaine"
 - collection: Forfait à la carte
 - prix: 25€
 - image: prohiit-carte-semaine.png
@@ -105,7 +105,7 @@ QR code à accès unique généré suite à l'achat.
 
 Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux clients).
 
-## E- Forfait "à la carte 1 mois"
+## Forfait "à la carte 1 mois"
 - collection: Forfait à la carte
 - prix: 75€
 - image: prohiit-carte-1m.png
@@ -117,7 +117,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 
 Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux clients).
 
-## E- Forfait "à la carte 2 mois"
+## Forfait "à la carte 2 mois"
 - collection: Forfait à la carte
 - prix: 125€
 - image: prohiit-carte-2m.png
@@ -129,7 +129,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 
 Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux clients).
 
-## F- Offre parrainage
+## Offre parrainage
 - collection: Offres spéciales
 - prix: 0€
 - image: prohiit-offre-parrainage.png
@@ -141,7 +141,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 
 Faire la demande par mail sur l'onglet Contact.
 
-## F- Offre coaching musculation séance d'essai
+## Offre coaching musculation séance d'essai
 - collection: Offres spéciales
 - prix: 30€
 - image: prohiit-offre-essai-coaching.png
@@ -152,7 +152,7 @@ Faire la demande par mail sur l'onglet Contact.
 
 Faire la demande par mail sur l'onglet Contact.
 
-## F- Offre spéciale Force de l'ordre, pompiers
+## Offre spéciale Force de l'ordre, pompiers
 - collection: Offres spéciales
 - prix: 0€
 - image: prohiit-offre-speciale-5E.png

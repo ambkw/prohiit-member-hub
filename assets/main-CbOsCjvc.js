@@ -109,7 +109,7 @@ Error generating stack: `+i.message+`
 `),o=r[0].trim(),i=c=>{const d=r.find(h=>h.startsWith(`- ${c}:`));return d?d.replace(`- ${c}:`,"").trim():""},s=["collection","prix","image","cta","ctaLabel"],a=r.findIndex((c,d)=>d>0&&c.trim()!==""&&!s.some(h=>c.startsWith(`- ${h}:`))),u=(a>0?r.slice(a):[]).join(`
 `).trim();return{nom:o,collection:i("collection"),prix:i("prix"),image:i("image"),cta:i("cta"),ctaLabel:i("ctaLabel")||"Commander",description:u}})}const _b=`# Abonnements PROHIIT
 
-## A- Forfait étudiants - abonnement annuel
+## Forfait étudiants - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 29,99€
 - image: prohiit-12m-etudiant.png
@@ -122,7 +122,7 @@ Error generating stack: `+i.message+`
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
-## B1- Forfait "illimité solo" - abonnement annuel
+## Forfait "illimité solo" - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 39,99€
 - image: prohiit-12m-solo.png
@@ -136,7 +136,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
-## B2- Forfait "illimité duo" - abonnement annuel
+## Forfait "illimité duo" - abonnement annuel
 - collection: Abonnement avec engagement 12 mois
 - prix: 64,99€
 - image: prohiit-12m-duo.png
@@ -150,8 +150,32 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
 
-## A - Séance d'essai gratuite
+## Forfait "sans engagement 1 personne"
 - collection: Abonnement sans engagement
+- prix: 49,99€
+- image: prohiit-1personne.png
+- cta: /inscription?token=bHpM3FqGA0djHOH5
+
+- 1 personne en illimité
+- Accès à toute la salle de sport
+- 49,99€/mois - sans engagement (4 mois minimum)
+
+Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
+
+## Forfait "sans engagement Duo"
+- collection: Abonnement sans engagement
+- prix: 74,99€
+- image: prohiit-duo.png
+- cta: /inscription?token=UzoLKUytOVnLIBNK
+
+- 2 personnes en illimité
+- Accès à toute la salle de sport
+- 74,99€/mois - sans engagement (4 mois minimum)
+
+Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
+
+## Séance d'essai gratuite
+- collection: Forfait à la carte
 - prix: 0€
 - image: prohiit-essai.png
 - cta: https://www.prohiit.fr/contact.html
@@ -164,31 +188,7 @@ Séance d'essai du club gratuite (pas de réservation requise)
 
 Accès immédiat possible après obtention de sa séance d'essai.
 
-## C- Forfait "sans engagement 1 personne"
-- collection: Abonnement sans engagement
-- prix: 49,99€
-- image: prohiit-1personne.png
-- cta: /inscription?token=bHpM3FqGA0djHOH5
-
-- 1 personne en illimité
-- Accès à toute la salle de sport
-- 49,99€/mois - sans engagement (4 mois minimum)
-
-Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
-
-## C- Forfait "sans engagement Duo"
-- collection: Abonnement sans engagement
-- prix: 74,99€
-- image: prohiit-duo.png
-- cta: /inscription?token=UzoLKUytOVnLIBNK
-
-- 2 personnes en illimité
-- Accès à toute la salle de sport
-- 74,99€/mois - sans engagement (4 mois minimum)
-
-Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (uniquement pour les nouveaux clients).
-
-## E- Forfait "à la carte 1 Pass journalier"
+## Forfait "à la carte 1 Pass journalier"
 - collection: Forfait à la carte
 - prix: 15€
 - image: prohiit-carte-1.png
@@ -201,7 +201,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 
 QR code à accès unique généré suite à l'achat.
 
-## E- Forfait "à la carte 1 Pass une semaine"
+## Forfait "à la carte 1 Pass une semaine"
 - collection: Forfait à la carte
 - prix: 25€
 - image: prohiit-carte-semaine.png
@@ -214,7 +214,7 @@ QR code à accès unique généré suite à l'achat.
 
 Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux clients).
 
-## E- Forfait "à la carte 1 mois"
+## Forfait "à la carte 1 mois"
 - collection: Forfait à la carte
 - prix: 75€
 - image: prohiit-carte-1m.png
@@ -226,7 +226,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 
 Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux clients).
 
-## E- Forfait "à la carte 2 mois"
+## Forfait "à la carte 2 mois"
 - collection: Forfait à la carte
 - prix: 125€
 - image: prohiit-carte-2m.png
@@ -238,7 +238,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 
 Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux clients).
 
-## F- Offre parrainage
+## Offre parrainage
 - collection: Offres spéciales
 - prix: 0€
 - image: prohiit-offre-parrainage.png
@@ -250,7 +250,7 @@ Abonnement nécessitant achat du QR code d'accès (uniquement pour les nouveaux 
 
 Faire la demande par mail sur l'onglet Contact.
 
-## F- Offre coaching musculation séance d'essai
+## Offre coaching musculation séance d'essai
 - collection: Offres spéciales
 - prix: 30€
 - image: prohiit-offre-essai-coaching.png
@@ -261,7 +261,7 @@ Faire la demande par mail sur l'onglet Contact.
 
 Faire la demande par mail sur l'onglet Contact.
 
-## F- Offre spéciale Force de l'ordre, pompiers
+## Offre spéciale Force de l'ordre, pompiers
 - collection: Offres spéciales
 - prix: 0€
 - image: prohiit-offre-speciale-5E.png
@@ -318,4 +318,4 @@ Sur justificatif -5€/mois. Faire la demande par mail sur l'onglet Contact.
 
 If you want to hide the \`${t.titleName}\`, you can wrap it with our VisuallyHidden component.
 
-For more information, see https://radix-ui.com/primitives/docs/components/${t.docsSlug}`;return m.useEffect(()=>{e&&(document.getElementById(e)||console.error(n))},[n,e]),null},Wk="DialogDescriptionWarning",Vk=({contentRef:e,descriptionId:t})=>{const r=`Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${Gg(Wk).contentName}}.`;return m.useEffect(()=>{var i;const o=(i=e.current)==null?void 0:i.getAttribute("aria-describedby");t&&o&&(document.getElementById(t)||console.warn(r))},[r,e,t]),null},Hk=Dg,Qk=zg,Xg=$g,qg=Ug,Zg=Wg,Jg=Hg,Kk=Kg;const Yk=Hk,Gk=Qk,ey=m.forwardRef(({className:e,...t},n)=>S.jsx(Xg,{ref:n,className:me("fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",e),...t}));ey.displayName=Xg.displayName;const ty=m.forwardRef(({className:e,children:t,...n},r)=>S.jsxs(Gk,{children:[S.jsx(ey,{}),S.jsxs(qg,{ref:r,className:me("fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg",e),...n,children:[t,S.jsxs(Kk,{className:"absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity data-[state=open]:bg-accent data-[state=open]:text-muted-foreground hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none",children:[S.jsx(Lv,{className:"h-4 w-4"}),S.jsx("span",{className:"sr-only",children:"Close"})]})]})]}));ty.displayName=qg.displayName;const ny=({className:e,...t})=>S.jsx("div",{className:me("flex flex-col space-y-1.5 text-center sm:text-left",e),...t});ny.displayName="DialogHeader";const ry=m.forwardRef(({className:e,...t},n)=>S.jsx(Zg,{ref:n,className:me("text-lg font-semibold leading-none tracking-tight",e),...t}));ry.displayName=Zg.displayName;const oy=m.forwardRef(({className:e,...t},n)=>S.jsx(Jg,{ref:n,className:me("text-sm text-muted-foreground",e),...t}));oy.displayName=Jg.displayName;const Xk=({abonnement:e})=>{const[t,n]=m.useState(!1),r=e.image?`/images/${e.image}`:void 0;return S.jsxs(S.Fragment,{children:[S.jsxs(Sg,{className:"overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow",children:[S.jsx("div",{className:"aspect-square bg-muted flex items-center justify-center overflow-hidden",children:r?S.jsx("img",{src:r,alt:e.nom,className:"w-full h-full object-cover",loading:"lazy"}):S.jsx("div",{className:"text-muted-foreground text-sm",children:"Image à venir"})}),S.jsxs(Cg,{className:"p-4 flex flex-col flex-1 gap-2",children:[S.jsx("span",{className:"text-xs font-semibold uppercase tracking-wide text-muted-foreground",children:e.collection}),S.jsx("h3",{className:"font-bold text-base leading-tight text-card-foreground",children:e.nom}),S.jsx("p",{className:"text-sm text-muted-foreground sm:line-clamp-3 flex-1 whitespace-pre-line",children:e.description}),S.jsx("button",{onClick:()=>n(!0),className:"hidden sm:inline text-xs text-primary font-semibold hover:underline self-start",children:"Voir le détail"}),S.jsxs("div",{className:"flex items-center justify-between mt-auto pt-2",children:[S.jsx("span",{className:"text-lg font-extrabold text-primary",children:e.prix}),S.jsx(zn,{asChild:!0,size:"sm",children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]})]}),S.jsx(Yk,{open:t,onOpenChange:n,children:S.jsx(ty,{className:"max-w-3xl max-h-[85vh] overflow-y-auto",children:S.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-start gap-4",children:[r&&S.jsx("img",{src:r,alt:e.nom,className:"w-full sm:w-48 sm:min-w-[12rem] rounded-lg object-contain"}),S.jsxs("div",{className:"flex flex-col gap-2 flex-1",children:[S.jsxs(ny,{children:[S.jsx(ry,{className:"text-lg font-bold",children:e.nom}),S.jsx(oy,{className:"text-xs uppercase tracking-wide",children:e.collection})]}),S.jsx("div",{className:"text-sm text-foreground whitespace-pre-line leading-relaxed",children:e.description}),S.jsxs("div",{className:"flex items-center justify-between pt-4 border-t mt-auto",children:[S.jsx("span",{className:"text-xl font-extrabold text-primary",children:e.prix}),S.jsx(zn,{asChild:!0,children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]})]})})})]})},qk=({abonnement:e})=>{const[t,n]=m.useState(!1),r=e.image?`/images/${e.image}`:void 0;return S.jsx("div",{className:"rounded-lg border bg-card p-3 hover:shadow-md transition-shadow",children:S.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-start gap-4",children:[S.jsxs("div",{className:"flex items-start gap-4",children:[S.jsx("div",{className:"w-20 h-20 flex-shrink-0 rounded-md bg-muted overflow-hidden flex items-center justify-center",children:r?S.jsx("img",{src:r,alt:e.nom,className:"w-full h-full object-cover",loading:"lazy"}):S.jsx("span",{className:"text-xs text-muted-foreground",children:"—"})}),S.jsxs("div",{className:"flex sm:hidden flex-col items-end gap-2 ml-auto",children:[S.jsx("span",{className:"text-base font-extrabold text-primary whitespace-nowrap",children:e.prix}),S.jsx(zn,{asChild:!0,size:"sm",children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]}),S.jsxs("div",{className:"flex-1 min-w-0",children:[S.jsx("span",{className:"text-xs font-semibold uppercase tracking-wide text-muted-foreground",children:e.collection}),S.jsx("h3",{className:"font-bold text-sm leading-tight text-card-foreground",children:e.nom}),S.jsx("p",{className:`text-xs text-muted-foreground mt-1 whitespace-pre-line ${t?"":"line-clamp-2 sm:line-clamp-none"}`,children:e.description}),!t&&S.jsx("button",{onClick:()=>n(!0),className:"sm:hidden text-xs text-primary font-semibold hover:underline mt-1",children:"Voir plus"})]}),S.jsxs("div",{className:"hidden sm:flex flex-col items-end gap-2 flex-shrink-0",children:[S.jsx("span",{className:"text-base font-extrabold text-primary whitespace-nowrap",children:e.prix}),S.jsx(zn,{asChild:!0,size:"sm",children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]})})},Zk=Ab(_b),Jk=()=>{const e=Lb(),[t,n]=m.useState(""),[r,o]=m.useState("Tous"),[i,s]=m.useState(e?"list":"grid"),a=m.useMemo(()=>Zk.filter(l=>{const u=r==="Tous"||l.collection===r,c=!t||l.nom.toLowerCase().includes(t.toLowerCase())||l.description.toLowerCase().includes(t.toLowerCase());return u&&c}),[t,r]);return S.jsxs("div",{className:"min-h-screen flex flex-col",children:[S.jsx(xg,{}),S.jsxs("main",{className:"flex-1 container mx-auto px-4 py-8",children:[S.jsx("h1",{className:"text-2xl md:text-3xl font-extrabold uppercase tracking-tight mb-6 text-foreground",children:"Nos Abonnements"}),S.jsx(Db,{search:t,onSearchChange:n,activeFilter:r,onFilterChange:o,viewMode:i,onViewModeChange:s}),S.jsx("div",{className:"mt-6",children:a.length===0?S.jsx("p",{className:"text-center text-muted-foreground py-12",children:"Aucun abonnement trouvé."}):i==="grid"?S.jsx("div",{className:"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6",children:a.map((l,u)=>S.jsx(Xk,{abonnement:l},u))}):S.jsx("div",{className:"flex flex-col gap-3",children:a.map((l,u)=>S.jsx(qk,{abonnement:l},u))})})]})]})},eP="pk_chain_4gn7aqJgTfdb4jDUcxZrjy5OvB78CS",tP="wk_eIh43sVMzvRodR2i",dp="https://cdn.bodylink.fr/widget.js",nP=()=>{const[e]=g1(),t=e.get("token");return m.useEffect(()=>{if(!t||document.querySelector(`script[src="${dp}"]`))return;const n=document.createElement("script");return n.src=dp,n.setAttribute("data-public-key",eP),n.setAttribute("data-widget-key",tP),n.async=!0,document.head.appendChild(n),()=>{}},[t]),S.jsxs("div",{className:"min-h-screen flex flex-col",children:[S.jsx(xg,{}),S.jsxs("main",{className:"flex-1 container mx-auto px-4 py-8",children:[S.jsx("h1",{className:"text-2xl md:text-3xl font-extrabold uppercase tracking-tight mb-6 text-foreground",children:"Inscription"}),t?S.jsx("div",{id:"bodylink-widget",className:"bodylink-widget min-h-[400px] rounded-lg border bg-card p-4"}):S.jsxs("div",{className:"flex flex-col items-center justify-center py-16 text-center gap-6",children:[S.jsx("p",{className:"text-lg text-muted-foreground max-w-md",children:"Pour vous inscrire, commencez par choisir la formule qui vous convient parmi nos abonnements."}),S.jsx(zn,{asChild:!0,size:"lg",children:S.jsx(nv,{to:"/",children:"Découvrir nos abonnements"})})]})]})]})},rP=()=>{const e=gr();return m.useEffect(()=>{console.error("404 Error: User attempted to access non-existent route:",e.pathname)},[e.pathname]),S.jsx("div",{className:"flex min-h-screen items-center justify-center bg-muted",children:S.jsxs("div",{className:"text-center",children:[S.jsx("h1",{className:"mb-4 text-4xl font-bold",children:"404"}),S.jsx("p",{className:"mb-4 text-xl text-muted-foreground",children:"Oops! Page not found"}),S.jsx("a",{href:"/",className:"text-primary underline hover:text-primary/90",children:"Return to Home"})]})})},oP=typeof window<"u"?d1:w1,iP=new dx,iy=({url:e})=>S.jsx(px,{client:iP,children:S.jsxs(Rb,{children:[S.jsx(BS,{}),S.jsx(tE,{}),S.jsx(oP,{location:e,children:S.jsxs(n1,{children:[S.jsx(ys,{path:"/",element:S.jsx(Jk,{})}),S.jsx(ys,{path:"/inscription",element:S.jsx(nP,{})}),S.jsx(ys,{path:"*",element:S.jsx(rP,{})})]})})]})});if(typeof window<"u"){const e=document.getElementById("root");jm(e,S.jsx(iy,{}))}async function pP(e){const{renderToString:t}=await ad(async()=>{const{renderToString:i}=await import("./server.browser-Cy_Bs0M1.js").then(s=>s.s);return{renderToString:i}},[]),{parseLinks:n}=await ad(async()=>{const{parseLinks:i}=await import("./parse-Dof72UiW.js");return{parseLinks:i}},[]),r=await t(S.jsx(iy,{...e})),o=n(r);return{html:r,links:o}}export{aP as c,lP as g,pP as prerender,m as r};
+For more information, see https://radix-ui.com/primitives/docs/components/${t.docsSlug}`;return m.useEffect(()=>{e&&(document.getElementById(e)||console.error(n))},[n,e]),null},Wk="DialogDescriptionWarning",Vk=({contentRef:e,descriptionId:t})=>{const r=`Warning: Missing \`Description\` or \`aria-describedby={undefined}\` for {${Gg(Wk).contentName}}.`;return m.useEffect(()=>{var i;const o=(i=e.current)==null?void 0:i.getAttribute("aria-describedby");t&&o&&(document.getElementById(t)||console.warn(r))},[r,e,t]),null},Hk=Dg,Qk=zg,Xg=$g,qg=Ug,Zg=Wg,Jg=Hg,Kk=Kg;const Yk=Hk,Gk=Qk,ey=m.forwardRef(({className:e,...t},n)=>S.jsx(Xg,{ref:n,className:me("fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",e),...t}));ey.displayName=Xg.displayName;const ty=m.forwardRef(({className:e,children:t,...n},r)=>S.jsxs(Gk,{children:[S.jsx(ey,{}),S.jsxs(qg,{ref:r,className:me("fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg",e),...n,children:[t,S.jsxs(Kk,{className:"absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity data-[state=open]:bg-accent data-[state=open]:text-muted-foreground hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none",children:[S.jsx(Lv,{className:"h-4 w-4"}),S.jsx("span",{className:"sr-only",children:"Close"})]})]})]}));ty.displayName=qg.displayName;const ny=({className:e,...t})=>S.jsx("div",{className:me("flex flex-col space-y-1.5 text-center sm:text-left",e),...t});ny.displayName="DialogHeader";const ry=m.forwardRef(({className:e,...t},n)=>S.jsx(Zg,{ref:n,className:me("text-lg font-semibold leading-none tracking-tight",e),...t}));ry.displayName=Zg.displayName;const oy=m.forwardRef(({className:e,...t},n)=>S.jsx(Jg,{ref:n,className:me("text-sm text-muted-foreground",e),...t}));oy.displayName=Jg.displayName;const Xk=({abonnement:e})=>{const[t,n]=m.useState(!1),r=e.image?`/images/${e.image}`:void 0;return S.jsxs(S.Fragment,{children:[S.jsxs(Sg,{className:"overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow",children:[S.jsx("div",{className:"aspect-square bg-muted flex items-center justify-center overflow-hidden",children:r?S.jsx("img",{src:r,alt:e.nom,className:"w-full h-full object-cover",loading:"lazy"}):S.jsx("div",{className:"text-muted-foreground text-sm",children:"Image à venir"})}),S.jsxs(Cg,{className:"p-4 flex flex-col flex-1 gap-2",children:[S.jsx("span",{className:"text-xs font-semibold uppercase tracking-wide text-muted-foreground",children:e.collection}),S.jsx("h3",{className:"font-bold text-base leading-tight text-card-foreground",children:e.nom}),S.jsx("p",{className:"text-sm text-muted-foreground sm:line-clamp-3 flex-1 whitespace-pre-line",children:e.description}),S.jsx("button",{onClick:()=>n(!0),className:"hidden sm:inline text-xs text-primary font-semibold hover:underline self-start",children:"Voir le détail"}),S.jsxs("div",{className:"flex items-center justify-between mt-auto pt-2",children:[S.jsx("span",{className:"text-lg font-extrabold text-primary",children:e.prix}),S.jsx(zn,{asChild:!0,size:"sm",children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]})]}),S.jsx(Yk,{open:t,onOpenChange:n,children:S.jsx(ty,{className:"max-w-3xl max-h-[85vh] overflow-y-auto",children:S.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-start gap-4",children:[r&&S.jsx("img",{src:r,alt:e.nom,className:"w-full sm:w-48 sm:min-w-[12rem] rounded-lg object-contain"}),S.jsxs("div",{className:"flex flex-col gap-2 flex-1",children:[S.jsxs(ny,{children:[S.jsx(ry,{className:"text-lg font-bold",children:e.nom}),S.jsx(oy,{className:"text-xs uppercase tracking-wide",children:e.collection})]}),S.jsx("div",{className:"text-sm text-foreground whitespace-pre-line leading-relaxed",children:e.description}),S.jsxs("div",{className:"flex items-center justify-between pt-4 border-t mt-auto",children:[S.jsx("span",{className:"text-xl font-extrabold text-primary",children:e.prix}),S.jsx(zn,{asChild:!0,children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]})]})})})]})},qk=({abonnement:e})=>{const[t,n]=m.useState(!1),r=e.image?`/images/${e.image}`:void 0;return S.jsx("div",{className:"rounded-lg border bg-card p-3 hover:shadow-md transition-shadow",children:S.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-start gap-4",children:[S.jsxs("div",{className:"flex items-start gap-4",children:[S.jsx("div",{className:"w-20 h-20 flex-shrink-0 rounded-md bg-muted overflow-hidden flex items-center justify-center",children:r?S.jsx("img",{src:r,alt:e.nom,className:"w-full h-full object-cover",loading:"lazy"}):S.jsx("span",{className:"text-xs text-muted-foreground",children:"—"})}),S.jsxs("div",{className:"flex sm:hidden flex-col items-end gap-2 ml-auto",children:[S.jsx("span",{className:"text-base font-extrabold text-primary whitespace-nowrap",children:e.prix}),S.jsx(zn,{asChild:!0,size:"sm",children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]}),S.jsxs("div",{className:"flex-1 min-w-0",children:[S.jsx("span",{className:"text-xs font-semibold uppercase tracking-wide text-muted-foreground",children:e.collection}),S.jsx("h3",{className:"font-bold text-sm leading-tight text-card-foreground",children:e.nom}),S.jsx("p",{className:`text-xs text-muted-foreground mt-1 whitespace-pre-line ${t?"":"line-clamp-2 sm:line-clamp-none"}`,children:e.description}),!t&&S.jsx("button",{onClick:()=>n(!0),className:"sm:hidden text-xs text-primary font-semibold hover:underline mt-1",children:"Voir plus"})]}),S.jsxs("div",{className:"hidden sm:flex flex-col items-end gap-2 flex-shrink-0",children:[S.jsx("span",{className:"text-base font-extrabold text-primary whitespace-nowrap",children:e.prix}),S.jsx(zn,{asChild:!0,size:"sm",children:S.jsx("a",{href:e.cta,children:e.ctaLabel})})]})]})})},Zk=Ab(_b),Jk=()=>{const e=Lb(),[t,n]=m.useState(""),[r,o]=m.useState("Tous"),[i,s]=m.useState(e?"list":"grid"),a=m.useMemo(()=>Zk.filter(l=>{const u=r==="Tous"||l.collection===r,c=!t||l.nom.toLowerCase().includes(t.toLowerCase())||l.description.toLowerCase().includes(t.toLowerCase());return u&&c}),[t,r]);return S.jsxs("div",{className:"min-h-screen flex flex-col",children:[S.jsx(xg,{}),S.jsxs("main",{className:"flex-1 container mx-auto px-4 py-8",children:[S.jsx("h1",{className:"text-2xl md:text-3xl font-extrabold uppercase tracking-tight mb-6 text-foreground",children:"Nos Abonnements"}),S.jsx(Db,{search:t,onSearchChange:n,activeFilter:r,onFilterChange:o,viewMode:i,onViewModeChange:s}),S.jsx("div",{className:"mt-6",children:a.length===0?S.jsx("p",{className:"text-center text-muted-foreground py-12",children:"Aucun abonnement trouvé."}):i==="grid"?S.jsx("div",{className:"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6",children:a.map((l,u)=>S.jsx(Xk,{abonnement:l},u))}):S.jsx("div",{className:"flex flex-col gap-3",children:a.map((l,u)=>S.jsx(qk,{abonnement:l},u))})})]})]})},eP="pk_chain_4gn7aqJgTfdb4jDUcxZrjy5OvB78CS",tP="wk_eIh43sVMzvRodR2i",dp="https://cdn.bodylink.fr/widget.js",nP=()=>{const[e]=g1(),t=e.get("token");return m.useEffect(()=>{if(!t||document.querySelector(`script[src="${dp}"]`))return;const n=document.createElement("script");return n.src=dp,n.setAttribute("data-public-key",eP),n.setAttribute("data-widget-key",tP),n.async=!0,document.head.appendChild(n),()=>{}},[t]),S.jsxs("div",{className:"min-h-screen flex flex-col",children:[S.jsx(xg,{}),S.jsxs("main",{className:"flex-1 container mx-auto px-4 py-8",children:[S.jsx("h1",{className:"text-2xl md:text-3xl font-extrabold uppercase tracking-tight mb-6 text-foreground",children:"Inscription"}),t?S.jsx("div",{id:"bodylink-widget",className:"bodylink-widget min-h-[400px] rounded-lg border bg-card p-4"}):S.jsxs("div",{className:"flex flex-col items-center justify-center py-16 text-center gap-6",children:[S.jsx("p",{className:"text-lg text-muted-foreground max-w-md",children:"Pour vous inscrire, commencez par choisir la formule qui vous convient parmi nos abonnements."}),S.jsx(zn,{asChild:!0,size:"lg",children:S.jsx(nv,{to:"/",children:"Découvrir nos abonnements"})})]})]})]})},rP=()=>{const e=gr();return m.useEffect(()=>{console.error("404 Error: User attempted to access non-existent route:",e.pathname)},[e.pathname]),S.jsx("div",{className:"flex min-h-screen items-center justify-center bg-muted",children:S.jsxs("div",{className:"text-center",children:[S.jsx("h1",{className:"mb-4 text-4xl font-bold",children:"404"}),S.jsx("p",{className:"mb-4 text-xl text-muted-foreground",children:"Oops! Page not found"}),S.jsx("a",{href:"/",className:"text-primary underline hover:text-primary/90",children:"Return to Home"})]})})},oP=typeof window<"u"?d1:w1,iP=new dx,iy=({url:e})=>S.jsx(px,{client:iP,children:S.jsxs(Rb,{children:[S.jsx(BS,{}),S.jsx(tE,{}),S.jsx(oP,{location:e,children:S.jsxs(n1,{children:[S.jsx(ys,{path:"/",element:S.jsx(Jk,{})}),S.jsx(ys,{path:"/inscription",element:S.jsx(nP,{})}),S.jsx(ys,{path:"*",element:S.jsx(rP,{})})]})})]})});if(typeof window<"u"){const e=document.getElementById("root");jm(e,S.jsx(iy,{}))}async function pP(e){const{renderToString:t}=await ad(async()=>{const{renderToString:i}=await import("./server.browser-5gNmdjbj.js").then(s=>s.s);return{renderToString:i}},[]),{parseLinks:n}=await ad(async()=>{const{parseLinks:i}=await import("./parse-CZISG-5K.js");return{parseLinks:i}},[]),r=await t(S.jsx(iy,{...e})),o=n(r);return{html:r,links:o}}export{aP as c,lP as g,pP as prerender,m as r};

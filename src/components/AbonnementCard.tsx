@@ -22,7 +22,7 @@ const AbonnementCard = ({ abonnement }: Props) => {
 
   return (
     <>
-      <Card className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow">
+      <Card className="overflow-hidden flex flex-col h-full hover:shadow-lg transition-shadow" itemProp="item" itemScope itemType="https://schema.org/Product">
         <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
           {imageSrc ? (
             <img
@@ -30,6 +30,7 @@ const AbonnementCard = ({ abonnement }: Props) => {
               alt={abonnement.nom}
               className="w-full h-full object-cover"
               loading="lazy"
+              itemProp="image"
             />
           ) : (
             <div className="text-muted-foreground text-sm">Image à venir</div>
@@ -37,12 +38,12 @@ const AbonnementCard = ({ abonnement }: Props) => {
         </div>
         <CardContent className="p-4 flex flex-col flex-1 gap-2">
           <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-            {abonnement.collection}
+            <span itemProp="category">{abonnement.collection}</span>
           </h2>
-          <h3 className="font-bold text-base leading-tight text-card-foreground">
+          <h3 className="font-bold text-base leading-tight text-card-foreground" itemProp="name">
             {abonnement.nom}
           </h3>
-          <p className="text-sm text-muted-foreground sm:line-clamp-3 flex-1 whitespace-pre-line">
+          <p className="text-sm text-muted-foreground sm:line-clamp-3 flex-1 whitespace-pre-line" itemProp="description">
             {abonnement.description}
           </p>
           <button
@@ -51,12 +52,15 @@ const AbonnementCard = ({ abonnement }: Props) => {
           >
             Voir le détail
           </button>
-          <div className="flex items-center justify-between mt-auto pt-2">
+          <div className="flex items-center justify-between mt-auto pt-2" itemProp="offers" itemScope itemType="https://schema.org/Offer">
+            <meta itemProp="priceCurrency" content="EUR" />
+            <meta itemProp="price" content={abonnement.prix.replace(/[^0-9.,]/g, "").replace(",", ".")} />
+            <meta itemProp="availability" content="https://schema.org/InStock" />
             <span className="text-lg font-extrabold text-primary">
               {abonnement.prix}
             </span>
             <Button asChild size="sm">
-              <a href={abonnement.cta}>{abonnement.ctaLabel}</a>
+              <a href={abonnement.cta} itemProp="url">{abonnement.ctaLabel}</a>
             </Button>
           </div>
         </CardContent>

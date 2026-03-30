@@ -13,7 +13,7 @@ const AbonnementListItem = ({ abonnement }: Props) => {
     : undefined;
 
   return (
-    <div className="rounded-lg border bg-card p-3 hover:shadow-md transition-shadow">
+    <div className="rounded-lg border bg-card p-3 hover:shadow-md transition-shadow" itemProp="item" itemScope itemType="https://schema.org/Product">
       {/* Mobile: stacked — Desktop: side by side */}
       <div className="flex flex-col sm:flex-row sm:items-start gap-4">
         {/* Image + prix/bouton row on mobile */}

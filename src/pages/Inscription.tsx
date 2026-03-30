@@ -1,18 +1,19 @@
 import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, Link } from "react-router-dom";
 import {
   BODYLINK_PUBLIC_KEY,
   BODYLINK_WIDGET_KEY,
   BODYLINK_SCRIPT_URL,
 } from "@/config/widget";
 import Header from "@/components/Header";
+import { Button } from "@/components/ui/button";
 
 const Inscription = () => {
   const [searchParams] = useSearchParams();
   const token = searchParams.get("token");
 
   useEffect(() => {
-    // Check if script already loaded
+    if (!token) return;
     if (document.querySelector(`script[src="${BODYLINK_SCRIPT_URL}"]`)) return;
 
     const script = document.createElement("script");
@@ -22,10 +23,8 @@ const Inscription = () => {
     script.async = true;
     document.head.appendChild(script);
 
-    return () => {
-      // Cleanup on unmount if needed
-    };
-  }, []);
+    return () => {};
+  }, [token]);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -34,15 +33,21 @@ const Inscription = () => {
         <h1 className="text-2xl md:text-3xl font-extrabold uppercase tracking-tight mb-6 text-foreground">
           Inscription
         </h1>
-        {token && (
-          <p className="text-sm text-muted-foreground mb-4">
-            Référence : <span className="font-mono font-semibold">{token}</span>
-          </p>
+        {token ? (
+          <div
+            id="bodylink-widget"
+            className="bodylink-widget min-h-[400px] rounded-lg border bg-card p-4"
+          />
+        ) : (
+          <div className="flex flex-col items-center justify-center py-16 text-center gap-6">
+            <p className="text-lg text-muted-foreground max-w-md">
+              Pour vous inscrire, commencez par choisir la formule qui vous convient parmi nos abonnements.
+            </p>
+            <Button asChild size="lg">
+              <Link to="/">Découvrir nos abonnements</Link>
+            </Button>
+          </div>
         )}
-        <div
-          id="bodylink-widget"
-          className="bodylink-widget min-h-[400px] rounded-lg border bg-card p-4"
-        />
       </main>
     </div>
   );

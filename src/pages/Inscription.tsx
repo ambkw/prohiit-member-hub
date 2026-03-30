@@ -44,7 +44,7 @@ const Inscription = () => {
               Pour vous inscrire, commencez par choisir la formule qui vous convient parmi nos abonnements.
             </p>
             <Button asChild size="lg">
-              <Link to="/">Découvrir nos abonnements</Link>
+              <a href="https://www.prohiit.fr/tarifs.html">Découvrir nos abonnements</a>
             </Button>
           </div>
         )}

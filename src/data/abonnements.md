@@ -69,7 +69,7 @@ Abonnement nécessitant achat du QR code d'accès et des frais d'inscription (un
 - collection: Forfait à la carte
 - prix: 0€
 - image: prohiit-essai.png
-- cta: https://www.prohiit.fr/contact.html
+- cta: /inscription?token=eOoaNz844MINBBkK
 - ctaLabel: S'inscrire
 
 Séance d'essai du club gratuite (pas de réservation requise)

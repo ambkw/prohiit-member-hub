@@ -1,6 +1,10 @@
 import { NavLink } from "@/components/NavLink";
 
-const Header = () => {
+interface HeaderProps {
+  hideInscription?: boolean;
+}
+
+const Header = ({ hideInscription = false }: HeaderProps) => {
   return (
     <header className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
@@ -18,13 +22,15 @@ const Header = () => {
           >
             Abonnements
           </a>
-          <NavLink
-            to="/inscription"
-            className="px-4 py-2 text-sm font-semibold uppercase tracking-wide rounded-md transition-colors hover:bg-sidebar-accent"
-            activeClassName="bg-primary text-primary-foreground"
-          >
-            Inscription
-          </NavLink>
+          {!hideInscription && (
+            <NavLink
+              to="/inscription"
+              className="px-4 py-2 text-sm font-semibold uppercase tracking-wide rounded-md transition-colors hover:bg-sidebar-accent"
+              activeClassName="bg-primary text-primary-foreground"
+            >
+              Inscription
+            </NavLink>
+          )}
         </nav>
       </div>
     </header>
